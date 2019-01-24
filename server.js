@@ -41,6 +41,12 @@ app.get('/about', (req,res) => {
   res.render('about.hbs', {
     pageHeader : 'ABout this Web application'
   });
+});
+
+app.get('/projects', (req,res) => {
+  res.render('projects.hbs', {
+    pageHeader : 'Portfolio page'
+  });
 })
 
 app.get('/bad', (req,res) => {
